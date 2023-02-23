@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title> UAV - Admin & Dashboard </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta content="Premium Multipurpose Admin & Dashboard Template" name="description" />
+    <meta content="MyraStudio" name="author" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <!-- App favicon -->
+    <link rel="shortcut icon" href="assets/images/favicon.ico">
+
+    <!-- App css -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/theme.min.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body>
+
+<!-- Begin page -->
+<div id="layout-wrapper">
+    <div class="header-border"></div>
+    <header id="page-topbar">
+        <div class="navbar-header">
+
+            <div class="d-flex align-items-left">
+                <button type="button" class="btn btn-sm mr-2 d-lg-none px-3 font-size-16 header-item waves-effect"
+                        id="vertical-menu-btn">
+                    <i class="fa fa-fw fa-bars"></i>
+                </button>
+
+            </div>
+
+            <div class="d-flex align-items-center">
+
+
+
+
+                <div class="dropdown d-inline-block ml-2">
+                    <button type="button" class="btn header-item waves-effect"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <img class="rounded-circle header-profile-user" src="assets/images/users/avatar-2.jpg"
+                             alt="Header Avatar">
+                        <span class="d-none d-sm-inline-block ml-1">Donald M.</span>
+                        <i class="mdi mdi-chevron-down d-none d-sm-inline-block"></i>
+                    </button>
+                    <div class="dropdown-menu dropdown-menu-right">
+                        <a class="dropdown-item d-flex align-items-center justify-content-between"
+                           href="javascript:void(0)">
+                            <span>Profile</span>
+                            <span>
+                                        <span class="badge badge-pill badge-warning">1</span>
+                                    </span>
+                        </a>
+                        <a class="dropdown-item d-flex align-items-center justify-content-between"
+                           href="javascript:void(0)">
+                            Settings
+                        </a>
+                        <a class="dropdown-item d-flex align-items-center justify-content-between"
+                           href="javascript:void(0)">
+                            <span>Lock Account</span>
+                        </a>
+                        <a class="dropdown-item d-flex align-items-center justify-content-between"
+                           href="javascript:void(0)">
+                            <span>Log Out</span>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+    <!-- ========== Left Sidebar Start ========== -->
+    <div class="vertical-menu">
+
+        <div data-simplebar class="h-100">
+
+            <div class="navbar-brand-box">
+                <a href="index.html" class="logo">
+                    <i class="mdi mdi-drone"></i>
+                    <span>
+                                UAVChain
+                            </span>
+                </a>
+            </div>
+
+            <!--- Sidemenu -->
+            <div id="sidebar-menu">
+                <!-- Left Menu Start -->
+                <ul class="metismenu list-unstyled" id="side-menu">
+                    <li class="menu-title">Menu</li>
+
+                    <li>
+                        <a href="index.html" class="waves-effect"><i class="mdi mdi-home-analytics"></i><span
+                                class="badge badge-pill badge-primary float-right"></span><span>Dashboard</span></a>
+                    </li>
+
+
+
+                    <li>
+                        <a href="javascript: void(0);" class="has-arrow waves-effect"><i
+                                class="mdi mdi-poll"></i><span>UAV</span></a>
+                        <ul class="sub-menu" aria-expanded="false">
+                            <li><a href="charts-morris.html">Register New UAV</a></li>
+                            <li><a href="charts-google.html">Pending Request</a></li>
+                            <li><a href="charts-google.html">On-Chain UAV</a></li>
+
+                        </ul>
+                    </li>
+
+
+
+                </ul>
+            </div>
+            <!-- Sidebar -->
+        </div>
+    </div>
+    <!-- Left Sidebar End -->
+
+    <!-- ============================================================== -->
+    <!-- Start right Content here -->
+    <!-- ============================================================== -->
+    <div class="main-content">
+
+        <div class="page-content">
+            <div class="container-fluid">
+
+                <!-- start page title -->
+                <div class="row">
+                    <div class="col-12">
+                        <div class="page-title-box d-flex align-items-center justify-content-between">
+                            <h4 class="mb-0 font-size-18">Dashboard</h4>
+
+                            <div class="page-title-right">
+                                <ol class="breadcrumb m-0">
+                                    <li class="breadcrumb-item"><a href="javascript: void(0);">Xeloro</a></li>
+                                    <li class="breadcrumb-item active">Dashboard</li>
+                                </ol>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- end page title -->
+
+
+
+                <div class="row">
+                    <div class="col-lg-12">
+
+                        <div class="card">
+                            <div class="card-body">
+
+                                <h4 class="card-title">UAV Analytics</h4>
+                                <p class="card-subtitle mb-4">From date of 1st Jan 2020 to continue</p>
+                                <div id="morris-bar-example" class="morris-chart"></div>
+                            </div>
+                            <!--end card body-->
+                        </div> <!-- end card-->
+                    </div> <!-- end col -->
+
+
+                </div>
+                <!--end row-->
+
+
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class=" d-none d-lg-block bg-register rounded-left"></div>
+
+
+                            </div>
+                            <!--end card body-->
+
+                        </div>
+                        <!--end card-->
+                    </div>
+                    <!--end col-->
+                    <div class="col-lg-6">
+                        <div class="card">
+                            <div class="card-body">
+
+                                <h4 class="card-title">Recent Registered UAV</h4>
+                                <p class="card-subtitle mb-4 font-size-13">Transaction period from 21 July to 25 Aug
+                                </p>
+
+                                <div class="table-responsive">
+                                    <table class="table table-centered table-striped table-nowrap mb-0">
+                                        <thead>
+                                        <tr>
+                                            <th>Customer</th>
+                                            <th>Phone</th>
+                                            <th>Email</th>
+                                            <th>Location</th>
+                                            <th>Create Date</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <td class="table-user">
+                                                <img src="assets/images/users/avatar-4.jpg" alt="table-user" class="mr-2 avatar-xs rounded-circle">
+                                                <a href="javascript:void(0);" class="text-body font-weight-semibold">Paul J. Friend</a>
+                                            </td>
+                                            <td>
+                                                937-330-1634
+                                            </td>
+                                            <td>
+                                                pauljfrnd@jourrapide.com
+                                            </td>
+                                            <td>
+                                                New York
+                                            </td>
+                                            <td>
+                                                07/07/2018
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="table-user">
+                                                <img src="assets/images/users/avatar-3.jpg" alt="table-user" class="mr-2 avatar-xs rounded-circle">
+                                                <a href="javascript:void(0);" class="text-body font-weight-semibold">Bryan J. Luellen</a>
+                                            </td>
+                                            <td>
+                                                215-302-3376
+                                            </td>
+                                            <td>
+                                                bryuellen@dayrep.com
+                                            </td>
+                                            <td>
+                                                New York
+                                            </td>
+                                            <td>
+                                                09/12/2018
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="table-user">
+                                                <img src="assets/images/users/avatar-8.jpg" alt="table-user" class="mr-2 avatar-xs rounded-circle">
+                                                <a href="javascript:void(0);" class="text-body font-weight-semibold">Kathryn S. Collier</a>
+                                            </td>
+                                            <td>
+                                                828-216-2190
+                                            </td>
+                                            <td>
+                                                collier@jourrapide.com
+                                            </td>
+                                            <td>
+                                                Canada
+                                            </td>
+                                            <td>
+                                                06/30/2018
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="table-user">
+                                                <img src="assets/images/users/avatar-1.jpg" alt="table-user" class="mr-2 avatar-xs rounded-circle">
+                                                <a href="javascript:void(0);" class="text-body font-weight-semibold">Timothy Kauper</a>
+                                            </td>
+                                            <td>
+                                                (216) 75 612 706
+                                            </td>
+                                            <td>
+                                                thykauper@rhyta.com
+                                            </td>
+                                            <td>
+                                                Denmark
+                                            </td>
+                                            <td>
+                                                09/08/2018
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="table-user">
+                                                <img src="assets/images/users/avatar-5.jpg" alt="table-user" class="mr-2 avatar-xs rounded-circle">
+                                                <a href="javascript:void(0);" class="text-body font-weight-semibold">Zara Raws</a>
+                                            </td>
+                                            <td>
+                                                (02) 75 150 655
+                                            </td>
+                                            <td>
+                                                austin@dayrep.com
+                                            </td>
+                                            <td>
+                                                Germany
+                                            </td>
+                                            <td>
+                                                07/15/2018
+                                            </td>
+                                        </tr>
+
+                                        </tbody>
+                                    </table>
+                                </div>
+
+                            </div>
+                            <!--end card body-->
+
+                        </div>
+                        <!--end card-->
+                    </div>
+                    <!--end col-->
+
+                </div>
+                <!--end row-->
+
+            </div> <!-- container-fluid -->
+        </div>
+        <!-- End Page-content -->
+
+        <footer class="footer">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-6">
+                        2023 © Deakin.
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="text-sm-right d-none d-sm-block">
+                            Design & Develop by <a href="">Deakin</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+    <!-- end main content-->
+
+</div>
+<!-- END layout-wrapper -->
+
+<!-- Overlay-->
+<div class="menu-overlay"></div>
+
+
+<!-- jQuery  -->
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/metismenu.min.js"></script>
+<script src="assets/js/waves.js"></script>
+<script src="assets/js/simplebar.min.js"></script>
+
+
+<!-- Sparkline Js-->
+<script src="./plugins/jquery-sparkline/jquery.sparkline.min.js"></script>
+
+<!-- Chart Js-->
+<script src="./plugins/jquery-knob/jquery.knob.min.js"></script>
+
+<!-- Chart Custom Js-->
+<script src="assets/pages/knob-chart-demo.js"></script>
+
+
+<!-- Morris Js-->
+<script src="./plugins/morris-js/morris.min.js"></script>
+
+<!-- Raphael Js-->
+<script src="./plugins/raphael/raphael.min.js"></script>
+
+<!-- Custom Js -->
+<script src="assets/pages/dashboard-demo.js"></script>
+
+<!-- App js -->
+<script src="assets/js/theme.js"></script>
+
+</body>
+
+</html>
