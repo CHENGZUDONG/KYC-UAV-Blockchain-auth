@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8" />
-  <title>UAVChain</title>
+  <title> UAVChain</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta content="Premium Multipurpose Admin & Dashboard Template" name="description" />
   <meta content="MyraStudio" name="author" />
@@ -141,7 +141,7 @@
           <div class="col-12">
             <div class="card">
               <div class="card-body">
-                <h4 class="card-title">UAV KYC Pending Requests</h4>
+                <h4 class="card-title">Registered UAV List</h4>
                 <p class="card-subtitle mb-4">
 
                 </p>
@@ -149,12 +149,12 @@
                 <table id="basic-datatable" class="table dt-responsive nowrap">
                   <thead>
                   <tr>
-                    <th>Name</th>
+                    <th>Owner</th>
                     <th>Position</th>
                     <th>Location</th>
                     <th>Age</th>
-                    <th>Request date</th>
-                    <th>Salary</th>
+                    <th>KYC date</th>
+                    <th>Total Delivery Value</th>
                   </tr>
                   </thead>
 
